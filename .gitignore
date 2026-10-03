@@ -97,3 +97,7 @@ util/*.lib
 util/*.exp
 submodules/CHKSUMS.tmp
 sys/amiga/regex/
+.nethack-upstream-base
+AGENTS.md
+.github/workflows/fork-license-notices.yml
+DEVEL/check-fork-notices.pl
