@@ -2,6 +2,7 @@
 /* Copyright (c) Stichting Mathematisch Centrum, Amsterdam, 1985. */
 /*-Copyright (c) Derek S. Ray, 2015. */
 /* NetHack may be freely redistributed.  See license for details. */
+/* Modified by Conor Neilson on 2026-10-03. */
 
 #include "hack.h"
 
@@ -1114,7 +1115,7 @@ mksobj_init(struct obj **obj, boolean artif)
         break;
     case WAND_CLASS:
         if (otmp->otyp == WAN_WISHING)
-            otmp->spe = 1;
+            otmp->spe = rnd(3);
         else if (otmp->otyp == WAN_STASIS)
             /* just as easy to recharge as other NODIR wands, but starts with
                fewer charges */
